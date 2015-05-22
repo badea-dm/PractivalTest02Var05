@@ -5,13 +5,21 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 
-
 public class PracticalTest02Var05MainActivity extends Activity {
-
+	
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_practical_test02_var05_main);
+        
+        
+    }
+    
+    @Override
+    protected void onDestroy() {
+    	
+    	
+    	super.onDestroy();
     }
 
 

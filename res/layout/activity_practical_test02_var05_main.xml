@@ -8,9 +8,51 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="ro.pub.cs.systems.pdsd.practicaltest02var05.PracticalTest02Var05MainActivity" >
 
-    <TextView
+    <EditText
+        android:id="@+id/sPort"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:inputType="numberPassword" >
+
+        <requestFocus />
+    </EditText>
+
+    <ToggleButton
+        android:id="@+id/start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sPort"
+        android:layout_centerHorizontal="true"
+        android:checked="true"
+        android:text="ToggleButton"
+        android:textOff="Stop Server"
+        android:textOn="Start Server" />
+
+    <EditText
+        android:id="@+id/cComm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/start"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/sOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/cComm"
+        android:layout_alignRight="@+id/cComm"
+        android:layout_below="@+id/cComm" />
+
+    <Button
+        android:id="@+id/send"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sOut"
+        android:layout_centerHorizontal="true"
+        android:text="Send" />
 
 </RelativeLayout>
